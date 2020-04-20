@@ -18,11 +18,9 @@ function currentLine(line) {
     return `The line is currently empty.`;
   } else {
     var array = []
-    var place = i + 1
-    var name = line[i]
     for (let i = 0; line.length > i; i++) {
-      array.push("${place}. ${name}")
-      return `The line is currently: ${katzDeliLine}.`
+      array.push([i + 1] + ". " + katzDeliLine[i])
+      return `The line is currently: ${array}.`
     }
   }
 }
