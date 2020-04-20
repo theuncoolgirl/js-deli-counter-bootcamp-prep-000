@@ -4,5 +4,5 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function nowServing(katzDeliLine) {
-  console.log(katzDeliLine[0])
+  console.log(`Currently serving ${katzDeliLine[0]}.`)
 }
